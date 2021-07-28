@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121312;
+    color: #fff;
+}
+*{
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-color: #ff9800;
+    border-bottom: 5px dashed #cec;
+}
+
+#second{
+    background-color: skyblue;
+}
+
+.pseudo-box{
+    text-align: center;
+}
+
+.pseudo-box span::before{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    border-top: 5px dashed #fff;
+    margin-right: 20px;
+    margin-bottom: 2px;
+}
+
+.pseudo-box span::after{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    border-top: 5px dashed #fff;
+    margin-left: 20px;
+    margin-bottom: 2px;
+}
+
+.background-box{
+    width: 90%;
+    height: 55vh;
+    margin: 0 auto;
+    border: 5px dotted #cec;
+    padding: 50px;
+    background-color: #eef728;
+    background-image:  url(../images/earth.png), url(../images/planet.png), url(../images/space.png);
+    background-repeat: no-repeat;
+    background-size: 20%, 20%, 100% 100%;
+    background-position: right bottom, left 50px top 50px, center center;
+    background-attachment: fixed;
+    background-clip: content-box;
+}
+
+
+#third{
+    background-color: #28f77e;
+}
+
+.gradient-box{
+    width: 90%;
+    height: 55vh;
+    margin: 0 auto;
+    border: 5px dotted #cec;
+    padding: 50px;
+    background-image: linear-gradient(58deg, rgb(0 0 0 / 38%), rgb(0 0 0 / 71%)), url(../images/dog.jpg);
+}
+
+
+#fourth{
+    background-color: #4caf50;
+}
+
+.shadow-box{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    text-shadow: 2px 1px 5px skyblue;
+}
