@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #252525;
+    color: #fff;
+}
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+header{
+    text-align: center;
+}
+
+section, footer{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-color: #00a6ff;
+    margin-top: 50px;
+    border-bottom: 5px dashed #000;
+}
+a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+/* ===============1st====================*/
+
+ .relative-container{
+    width: 50%;
+    height: 50vh;
+    background-color: #d95229;
+    margin: 50px auto;
+    position: relative;
+}
+
+.relative-box{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.relative-container .relative-box:nth-child(1){
+    width: auto;
+    height: auto;
+    background-color: #ececec;
+    z-index: 100;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.relative-container .relative-box:nth-child(2){
+    width: 75px;
+    height: 75px;
+    background-color: #ebebec;
+    color: #000;
+    z-index: 200;
+
+
+}
+.relative-container .relative-box:nth-child(3){
+    width: 100px;
+    height: 100px;
+    background-color: #acacac;
+    z-index: 999;
+} 
+
+/*================2nd=====================*/
+
+ .relative-steps{
+    width: 50%;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: #5d74f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.relative-steps div{
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    border: 3px solid #000;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first{
+    background-color: #ee2d2d;
+    position: relative;
+}
+.second{
+    background-color: #ff7800;
+
+}
+.third{
+    background-color: #fdca00;
+}
+
+div.absolute-box{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #000;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+} 
+
+
+
+
+/*==================3rd===================*/
+
+.sticky-container{
+    height: 150vh;
+    background-color: #d72f4e;
+    padding: 0;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.sticky-container .preview-banner{
+    width: 100%;
+    height: 250px;
+    line-height: 250px;
+    background-color: #1368c4;
+    border: 2px solid #000;
+}
+
+.sticky-container .sticky-box{
+    width: 100%;
+    height: 100px;
+    background-color: #1b282feb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    position: fixed;
+    top: 0;
+    z-index: 90;
+} 
+
+
+/* =========================4th========================= */
+
+
+.overflow-box{
+    width: 50%;
+    height: 300px;
+    background: rgb(24, 24, 24);
+    overflow: auto;
+    overflow-x: scroll;
+}
